@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+{% block title %}
+Lab3
+{% endblock %}
+
+{% block main %}
+
+<div>
+  <form action="" method="POST">
+    <h2><b>CONTACT FORM</h2>
+    <br>
+    <p class="lbel"> <label> Name: <br> <input name="name" autofocus placeholder="Enter your name"></label></p>
+    <p class="lbel"> <label> E-Mail: <br> <input type="email "name="email" placeholder="Enter your email"></label></p>
+    <p class="lbel"> <label> Message: <br> </p>
+    <textarea rows="5" cols="50" name="msg"> Enter message here... </textarea>
+    <br><br>
+    <input type="submit" value="Send">
+  </form>
+</div>
+  
+{% endblock %}
+
+
