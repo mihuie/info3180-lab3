@@ -35,7 +35,11 @@
   <header>
     {% include "header.html" %}
   </header>
-
+  
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  
   <div id="main" role="main">
     {% block main %}{% endblock %}
   </div>
